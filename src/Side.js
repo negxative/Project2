@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Dash.css';
 import wall from './Subt.svg'
 import trans from './trans.svg'
@@ -8,16 +8,30 @@ import home from './home.svg'
 import data from './chart.json'
 import { Link } from 'react-router-dom';
 const Side = () => {
+    
+    const imd=()=>{
+            if(window.innerWidth>1000){
+            document.getElementById("mas").style.maxWidth="50%";
+             document.getElementById("mas").style.minWidth="50%";
+            }
+            else if(window.innerWidth>750){
+            document.getElementById("mas").style.maxWidth="60%";
+            document.getElementById("mas").style.minWidth="50%";}
+            else {
+            document.getElementById("mas").style.maxWidth="100%";
+            document.getElementById("mas").style.minWidth="50%";}
+    }
+
     return (
         <>
             <div id="main" style={{margin: "10% 0% 5% 3%",minWidth:"20%" }}>
                 <div>
                     <div class="p-2 bd-highlight mb-3" >
                         
-                         <Link id="cp" to="/"><img src={home} alt="" id="icon" /> Dashboard</Link> 
+                         <Link id="cp" onClick={imd} to="/"><img src={home}  alt="" id="icon" /> Dashboard</Link> 
                     </div>
                     <div class="p-2 bd-highlight mb-3">
-                        <Link id="cp" to="/main"> <img src={wall} alt="" id="icon" />Wallet</Link> 
+                        <Link id="cp" to="/main" > <img src={wall}  alt="" id="icon" />Wallet</Link> 
                     </div> <div class="p-2 bd-highlight mb-3">
                          <Link id="cp" to="/prof"><img src={trans} alt="" id="icon" />Transaction</Link>  
                     </div> <div class="p-2 bd-highlight mb-3">
@@ -48,3 +62,5 @@ const Side = () => {
 }
 
 export default Side;
+
+

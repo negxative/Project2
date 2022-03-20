@@ -17,14 +17,17 @@ import Sidebar from './Sidebar';
 
 
 const Prof = () => {
+    const dis= ()=>{
+        document.getElementById("hot1").style.display="none";
+}
     return (
         <>   
             <Sidebar/>
             <div id="hot1"  style={{ margin: "3% 1% 1% 1%",minwidth:"100%",maxWidth:"100%" }}>
                 <div class="d-flex justify-content-end flex-row bd-highlight align-items-center">
                     <img src={vec} alt="" style={{ maxHeight: "20px", marginRight: "15px" }} />
-                    <img src={gp} alt="" style={{ maxHeight: "40px" }} />
-                </div>
+                    <button id="dog" style={{outline:"none",border:"none",background:"none"}} onClick={dis}><img src={gp} alt="" style={{ maxHeight: "40px" }} /></button> 
+                  </div>
                 <div class="d-flex justify-content-center flex-column bd-highlight align-items-center mb-4">
                     <img src={re} alt="" style={{ maxHeight: "80px" }} /> <br />
                     <h5>Jonas Kanwald</h5>

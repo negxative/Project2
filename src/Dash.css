@@ -24,7 +24,7 @@ a,a:hover{
 }
 
 #mas{
-    
+    min-width: 50%;
     border:solid 0.5px white  ;
     border-radius: 40px;
      background: rgb(94,88,238);
@@ -121,7 +121,9 @@ input:focus{
     height:200px;
 }
 
-
+#mcont{
+    width: 50%;
+}
 #god{
     display: none;
 }
@@ -136,6 +138,7 @@ input:focus{
     }
   }
   @media only screen and (max-width: 1200px) {
+    
    #main{
        display: none;
    }
@@ -151,6 +154,7 @@ input:focus{
        margin-Right:10px;
        max-height:15px;
    }
+   
   }
   @media only screen and (max-width: 1000px) {
     #mas{
@@ -167,6 +171,7 @@ input:focus{
         min-width:100%;
         font-size: 14px;
     }
+  
     #wrapper{
         max-width: 100%;
         flex-wrap: wrap;
