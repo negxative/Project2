@@ -1,0 +1,38 @@
+[
+    {
+        "Name": "april",
+        "Expense": 13,
+        "income": 3000,
+        "expense": 1000
+    },
+    {
+        "Name": "May",
+        "Expense": 14.5,
+        "income": 2000,
+        "expense": 1700
+    },
+    {
+        "Name": "Jun",
+        "Expense": 13.5,
+        "income": 1000,
+        "expense": 400
+    },
+    {
+        "Name": "Jul",
+        "Expense": 13.9,
+        "income": 300,
+        "expense": 400
+    },
+    {
+        "Name": "Aug",
+        "Expense": 15,
+        "income": 2500,
+        "expense": 1500
+    },
+    {
+        "Name": "Sep",
+        "Expense": 14.5,
+        "income": 1000,
+        "expense": 700
+    }
+]

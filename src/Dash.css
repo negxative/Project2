@@ -1,0 +1,211 @@
+#cont{
+    background:rgba(255, 255, 255, 0.795);
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom:30px;
+    border-radius: 40px;
+    padding-bottom: 50px;
+  }
+ 
+
+#icon{
+    max-height: 20px;
+    margin-right: 20px;
+}
+#cp,a{
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+a,a:hover{
+    COLOR:white;
+}
+#cp:active,#cp:focus{
+    color:#5E58EE;
+}
+
+#mas{
+    
+    border:solid 0.5px white  ;
+    border-radius: 40px;
+     background: rgb(94,88,238);
+    background: linear-gradient(145deg, rgba(94,88,238,0.2) 0%, rgb(248, 209, 229,0.2) 100%);
+    background-size: cover;
+   
+}
+.red{
+    border:solid 0.4px white  ;
+    border-radius: 20px;
+    background:rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+    color: black;
+    min-width: 60%;
+}
+input:focus{
+    outline: none;
+}
+
+.card{
+    background: #5E58EE;
+    color: rgba(255, 255, 255, 0.87);
+    border-radius: 30px;
+    min-width: 50%; 
+    min-height: 20vh;
+    padding: 3% 5% 3% 5%;
+    font-size: 12px;
+    font-weight: 3000;
+    margin:5% 5% 5% 0%;
+    border:solid 0.5px white  ;
+}
+.card h5,.card h6{
+        font-size:medium;
+        color: white;
+
+}
+
+.card2{
+   background:rgba(255, 255, 255, 0.445);
+   color: rgb(29, 29, 29);
+   border-radius: 30px;
+   min-width: 50%; 
+   min-height: 20vh;
+   padding: 3% 5% 3% 5%;
+   font-size: 14px;
+   font-weight: 100;
+   margin:5% 1% 5% 0%;
+   font-size: 10px;
+   border:solid 0.5px white  ;
+}
+#card3{
+    min-Width:50%; 
+    border:solid 0.5px white  ;
+   
+    
+}
+#card4{
+    min-Width:30%; 
+    border:solid 0.5px white  ;
+   
+}
+
+#line{
+    margin-top: 30px;
+    transform: translateX(-50px);
+   
+}
+#line2{
+    position: relative;
+    top:-55%;
+}
+#line2 span{
+      position: relative;
+    top:-55%;
+    background: #5E58EE;
+    font-size: 12px;
+    color: antiquewhite;
+    padding: 3px 10px 3px 10px;
+    border-radius: 10px;
+}
+
+#main,#main2,#hot1{
+    display: flex;
+    flex-direction: column;
+}
+#for button:focus{
+    outline: none;
+}
+#for button{
+    border:solid 0.5px white  ;
+}
+#chart2{
+    width:300px;
+    height:200px;
+}
+
+
+#god{
+    display: none;
+}
+@media only screen and (max-width: 1400px) {
+    #chart{
+        width:250px;
+        height: 100px;
+    }
+    #chart2{
+        width:300px;
+        height:150px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+   #main{
+       display: none;
+   }
+   #offcanvasScrolling{
+    background: rgba(255, 255, 255, 0.8);
+   }
+   
+   #god{
+       display: inline;
+       align-items: center;
+       background:rgba(240, 248, 255, 0.0);
+       border: none;
+       margin-Right:10px;
+       max-height:15px;
+   }
+  }
+  @media only screen and (max-width: 1000px) {
+    #mas{
+        max-width: 60%;
+    }
+    .card{
+        min-width:100%;
+        font-size: 14px;
+    }
+    .card h5,span{
+        font-size:15px;
+    }
+    .card2{
+        min-width:100%;
+        font-size: 14px;
+    }
+    #wrapper{
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    #hot{
+        display:none;
+    }
+    #mas{
+        max-width: 100%;
+        justify-content: center;
+    }
+    #gop{
+        flex-wrap: wrap;
+    }
+    .card,.card2{
+        min-width: 100%;
+        max-width:100%; 
+        margin:10% 3% 5% 3%; 
+    }
+    #card3,#card4{
+        margin:10% 3% 5% 3%;
+        min-width: 100%;
+        max-width:100%;  
+    }
+    #chart{
+        width:350px;
+        height: 100px;
+    }
+    #chart2{
+        width:350px;
+        height:150px;
+    }
+    #icon{
+        margin-right: 10px;
+    }
+    #cont{
+        margin-top:10px;
+    }
+  
+  }
