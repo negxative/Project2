@@ -31,18 +31,18 @@ const Side = () => {
         <>
             <div id="main" style={{margin: "10% 0% 5% 3%",minWidth:"20%" }}>
                 <div>
-                    <div class="p-2 bd-highlight mb-3" >
+                    <div className="p-2 bd-highlight mb-3" >
                         
                          <Link id="cp" onClick={imd} to="/"><img src={home}  alt="" id="icon" /> Dashboard</Link> 
                     </div>
-                    <div class="p-2 bd-highlight mb-3">
+                    <div className="p-2 bd-highlight mb-3">
                         <Link id="cp" onClick={dis} to="/main" > <img src={wall}  alt="" id="icon" />Wallet</Link> 
                     </div> 
-                    <div class="p-2 bd-highlight mb-3">
+                    <div className="p-2 bd-highlight mb-3">
                          <Link id="cp" to="/trans"><img src={trans} alt="" id="icon" />Transaction</Link>  
-                    </div> <div class="p-2 bd-highlight mb-3">
+                    </div> <div className="p-2 bd-highlight mb-3">
                         <Link  id="cp" to="/prof"> <img src={prof} alt="" id="icon" />Profile</Link>  
-                    </div> <div class="p-2 bd-highlight mb-3">
+                    </div> <div className="p-2 bd-highlight mb-3">
                         <Link id="cp" onClick={dis} to="/main"> <img src={scan} alt="" id="icon" />Payment</Link>   
                     </div>
                 </div>

@@ -17,7 +17,7 @@ const Dash = () => {
         
         <>
         <Router>
-        <div class="d-flex justify-content-start " id="flexb">
+        <div className="d-flex justify-content-start " id="flexb">
             <Side />
             <Routes>
                 <Route path="/" element={<><Main/><Profile/></>}/>

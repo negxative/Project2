@@ -9,7 +9,7 @@ const TransTab = () => {
    
     <div className='container' id="table" >
     <Sidebar/>
-        <table class="table"  >
+        <table className="table"  >
             <thead >
                 <tr style={{ fontSize: "14px" }}>
                     <th scope="col">User</th>

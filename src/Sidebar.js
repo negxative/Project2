@@ -30,27 +30,27 @@ const dis= ()=>{
 }
     return(
        <>
-       <button id="god" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img src={menu}></img></button>
+       <button id="god" className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img src={menu}></img></button>
         
-        <div class="offcanvas offcanvas-start"  data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasScrollingLabel" ></h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div className="offcanvas offcanvas-start"  data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title" id="offcanvasScrollingLabel" ></h5>
+            <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body" >
+          <div className="offcanvas-body" >
           <div id="main2" style={{margin: "5% 0% 5% 3%",minWidth:"20%" }}>
                 <div>
-                <div class="p-2 bd-highlight mb-3" >
+                <div className="p-2 bd-highlight mb-3" >
                         
                         <Link id="cp"  onClick={imd} to="/"><img src={home} alt="" id="icon" /> Dashboard</Link> 
                    </div>
-                   <div class="p-2 bd-highlight mb-3">
+                   <div className="p-2 bd-highlight mb-3">
                        <Link id="cp"  onClick={dis} to="/main"> <img src={wall} alt="" id="icon" />Wallet</Link> 
-                   </div> <div class="p-2 bd-highlight mb-3">
+                   </div> <div className="p-2 bd-highlight mb-3">
                         <Link id="cp" to="/trans"><img src={trans} alt="" id="icon" />Transaction</Link>  
-                   </div> <div class="p-2 bd-highlight mb-3">
+                   </div> <div className="p-2 bd-highlight mb-3">
                        <Link id="cp" to="/prof"> <img src={prof} alt="" id="icon" />Profile</Link>  
-                   </div> <div class="p-2 bd-highlight mb-3">
+                   </div> <div className="p-2 bd-highlight mb-3">
                        <Link id="cp"  onClick={dis} to="/main"> <img src={scan} alt="" id="icon" />Payment</Link>   
                    </div>
                 </div>
