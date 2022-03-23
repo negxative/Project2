@@ -29,7 +29,7 @@ const TransTab = () => {
                                         <span style={{fontSize:"14px",color:'black',fontWeight:"500"}}>{el.name}</span> <br /> <br id="break" />   {el.status}
                                     </div>
                                 </td>
-                                <td>{el.amount}</td>
+                                <td> <span  style={el.amount[0]=="+"?{color:"#5E58EE",fontSize:"14px",fontWeight:"500"}:{color:"orange",fontSize:"14px",fontWeight:"500"}} >{el.amount}</span></td>
                             </tr>
                         </tbody>
 
