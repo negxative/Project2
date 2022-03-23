@@ -9,6 +9,25 @@ import scan from './paym.svg'
 import home from './home.svg'
 import { Link } from 'react-router-dom';
 const Sidebar = () => {
+     
+    const imd=()=>{
+        if(window.innerWidth>1000){
+        document.getElementById("mas").style.maxWidth="50%";
+         document.getElementById("mas").style.minWidth="50%";
+        }
+        else if(window.innerWidth>750){
+        document.getElementById("mas").style.maxWidth="60%";
+        document.getElementById("mas").style.minWidth="50%";}
+        else {
+        document.getElementById("mas").style.maxWidth="100%";
+        document.getElementById("mas").style.minWidth="50%";}
+}
+const dis= ()=>{
+    if(window.innerWidth>1200)
+    document.getElementById("mas").style.minWidth="75%";
+    else
+    document.getElementById("mas").style.minWidth="100%";
+}
     return(
        <>
        <button id="god" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img src={menu}></img></button>
@@ -23,16 +42,16 @@ const Sidebar = () => {
                 <div>
                 <div class="p-2 bd-highlight mb-3" >
                         
-                        <Link id="cp" to="/"><img src={home} alt="" id="icon" /> Dashboard</Link> 
+                        <Link id="cp"  onClick={imd} to="/"><img src={home} alt="" id="icon" /> Dashboard</Link> 
                    </div>
                    <div class="p-2 bd-highlight mb-3">
-                       <Link id="cp" to="/main"> <img src={wall} alt="" id="icon" />Wallet</Link> 
+                       <Link id="cp"  onClick={dis} to="/main"> <img src={wall} alt="" id="icon" />Wallet</Link> 
                    </div> <div class="p-2 bd-highlight mb-3">
-                        <Link id="cp" to="/prof"><img src={trans} alt="" id="icon" />Transaction</Link>  
+                        <Link id="cp" to="/trans"><img src={trans} alt="" id="icon" />Transaction</Link>  
                    </div> <div class="p-2 bd-highlight mb-3">
                        <Link id="cp" to="/prof"> <img src={prof} alt="" id="icon" />Profile</Link>  
                    </div> <div class="p-2 bd-highlight mb-3">
-                       <Link id="cp" to="/main"> <img src={scan} alt="" id="icon" />Payment</Link>   
+                       <Link id="cp"  onClick={dis} to="/main"> <img src={scan} alt="" id="icon" />Payment</Link>   
                    </div>
                 </div>
                 <div>

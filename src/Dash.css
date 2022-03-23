@@ -7,6 +7,21 @@
     padding-bottom: 50px;
   }
  
+  #table{
+      width:900px;
+      margin:20px 20px 20px 40px; 
+      
+    border:solid 0.5px white  ;
+    border-radius: 40px;
+    background: linear-gradient(145deg, rgba(94,88,238,0.2) 0%, rgb(248, 209, 229,0.2) 100%);
+    background-size: cover;
+    margin: 20px 10px 10px 30px;
+  }
+  #imh{
+      max-height: 40px;
+      border-radius: 30px;
+      aspect-ratio: 1;
+  }
 
 #icon{
     max-height: 20px;
@@ -27,7 +42,6 @@ a,a:hover{
     min-width: 50%;
     border:solid 0.5px white  ;
     border-radius: 40px;
-     background: rgb(94,88,238);
     background: linear-gradient(145deg, rgba(94,88,238,0.2) 0%, rgb(248, 209, 229,0.2) 100%);
     background-size: cover;
    
@@ -126,6 +140,7 @@ input:focus{
 }
 #god{
     display: none;
+    
 }
 @media only screen and (max-width: 1400px) {
     #chart{
@@ -152,6 +167,7 @@ input:focus{
        background:rgba(240, 248, 255, 0.0);
        border: none;
        margin-Right:10px;
+       margin-bottom:10px;
        max-height:15px;
    }
    
@@ -171,7 +187,7 @@ input:focus{
         min-width:100%;
         font-size: 14px;
     }
-  
+ 
     #wrapper{
         max-width: 100%;
         flex-wrap: wrap;
@@ -212,5 +228,14 @@ input:focus{
     #cont{
         margin-top:10px;
     }
-  
+    #break{
+        display: none;
+    }
+    #table{
+        margin:10px 5px 5px 5px;
+    }
+    #god{
+        
+       margin-bottom:20px;
+    }
   }

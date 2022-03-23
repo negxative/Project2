@@ -8,8 +8,8 @@ import {
     Routes,
     Route
   } from "react-router-dom";
-import Sidebar from './Sidebar';
 import Prof from './Prof';
+import TransTab from './TransTab';
 
 const Dash = () => {
     
@@ -23,6 +23,7 @@ const Dash = () => {
                 <Route path="/" element={<><Main/><Profile/></>}/>
                 <Route path="/main" element={<Main/>}/>
                 <Route path="/prof" element={<Prof/>}/>
+                <Route path="/trans" element={<TransTab/>}/>
             </Routes>
         </div>
         </Router>

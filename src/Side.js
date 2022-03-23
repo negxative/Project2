@@ -21,7 +21,12 @@ const Side = () => {
             document.getElementById("mas").style.maxWidth="100%";
             document.getElementById("mas").style.minWidth="50%";}
     }
-
+    const dis= ()=>{
+        if(window.innerWidth>1200)
+        document.getElementById("mas").style.minWidth="75%";
+        else
+        document.getElementById("mas").style.minWidth="100%";
+}
     return (
         <>
             <div id="main" style={{margin: "10% 0% 5% 3%",minWidth:"20%" }}>
@@ -31,13 +36,14 @@ const Side = () => {
                          <Link id="cp" onClick={imd} to="/"><img src={home}  alt="" id="icon" /> Dashboard</Link> 
                     </div>
                     <div class="p-2 bd-highlight mb-3">
-                        <Link id="cp" to="/main" > <img src={wall}  alt="" id="icon" />Wallet</Link> 
+                        <Link id="cp" onClick={dis} to="/main" > <img src={wall}  alt="" id="icon" />Wallet</Link> 
+                    </div> 
+                    <div class="p-2 bd-highlight mb-3">
+                         <Link id="cp" to="/trans"><img src={trans} alt="" id="icon" />Transaction</Link>  
                     </div> <div class="p-2 bd-highlight mb-3">
-                         <Link id="cp" to="/prof"><img src={trans} alt="" id="icon" />Transaction</Link>  
+                        <Link  id="cp" to="/prof"> <img src={prof} alt="" id="icon" />Profile</Link>  
                     </div> <div class="p-2 bd-highlight mb-3">
-                        <Link id="cp" to="/prof"> <img src={prof} alt="" id="icon" />Profile</Link>  
-                    </div> <div class="p-2 bd-highlight mb-3">
-                        <Link id="cp" to="/main"> <img src={scan} alt="" id="icon" />Payment</Link>   
+                        <Link id="cp" onClick={dis} to="/main"> <img src={scan} alt="" id="icon" />Payment</Link>   
                     </div>
                 </div>
                 <div>
