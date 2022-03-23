@@ -1,5 +1,4 @@
 import React from 'react';
-import img from "./favicon.ico"
 import { Link } from "react-router-dom";
 import ima from "./moon.png"
 import imb from "./sunny.png"

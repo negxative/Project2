@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Dash.css';
 import wall from './Subt.svg'
 import trans from './trans.svg'

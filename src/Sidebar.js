@@ -1,6 +1,5 @@
 import React from 'react';
 import menu from "./menus.png"
-import Side from './Side';
 import './Dash.css';
 import wall from './Subt.svg'
 import trans from './trans.svg'
@@ -30,11 +29,11 @@ const dis= ()=>{
 }
     return(
        <>
-       <button id="god" className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img src={menu}></img></button>
+       <button id="god" className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" ><img alt='' src={menu}></img></button>
         
         <div className="offcanvas offcanvas-start"  data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasScrollingLabel" ></h5>
+            <h5 className="offcanvas-title" id="offcanvasScrollingLabel" > </h5>
             <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div className="offcanvas-body" >
@@ -42,16 +41,16 @@ const dis= ()=>{
                 <div>
                 <div className="p-2 bd-highlight mb-3" >
                         
-                        <Link id="cp"  onClick={imd} to="/"><img src={home} alt="" id="icon" /> Dashboard</Link> 
+                        <Link id="cp"  onClick={imd} to="/"><img src={home} alt="r" id="icon" /> Dashboard</Link> 
                    </div>
                    <div className="p-2 bd-highlight mb-3">
-                       <Link id="cp"  onClick={dis} to="/main"> <img src={wall} alt="" id="icon" />Wallet</Link> 
+                       <Link id="cp"  onClick={dis} to="/main"> <img src={wall} alt="r" id="icon" />Wallet</Link> 
                    </div> <div className="p-2 bd-highlight mb-3">
-                        <Link id="cp" to="/trans"><img src={trans} alt="" id="icon" />Transaction</Link>  
+                        <Link id="cp" to="/trans"><img src={trans} alt="r" id="icon" />Transaction</Link>  
                    </div> <div className="p-2 bd-highlight mb-3">
-                       <Link id="cp" to="/prof"> <img src={prof} alt="" id="icon" />Profile</Link>  
+                       <Link id="cp" to="/prof"> <img src={prof} alt="r" id="icon" />Profile</Link>  
                    </div> <div className="p-2 bd-highlight mb-3">
-                       <Link id="cp"  onClick={dis} to="/main"> <img src={scan} alt="" id="icon" />Payment</Link>   
+                       <Link id="cp"  onClick={dis} to="/main"> <img src={scan} alt="r" id="icon" />Payment</Link>   
                    </div>
                 </div>
                 <div>

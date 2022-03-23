@@ -1,7 +1,7 @@
 import React from 'react';
 import data from "./chart.json"
 import './Dash.css';
-import { PieChart, Pie, Sector, ResponsiveContainer,Cell, Tooltip, Legend } from 'recharts';
+import { PieChart, Pie,Cell, Tooltip, Legend } from 'recharts';
 
 let tot=[0,0]
     for(let i=0;i<data.length ;i++){

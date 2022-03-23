@@ -12,7 +12,6 @@ import Reb from './Reb.png'
 import Recc from './Recc.png'
 import Red from './Red.png'
 
-import menu from "./menus.png"
 import Sidebar from './Sidebar';
 
 
